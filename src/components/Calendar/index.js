@@ -193,13 +193,13 @@ class Calendar extends PureComponent {
     return (
       <div onMouseUp={e => e.stopPropagation()} className={styles.monthAndYearWrapper}>
         {showMonthArrow ? (
-          <button
+          <Button
             type="button"
             className={classnames(styles.nextPrevButton, styles.prevButton)}
             onClick={() => changeShownDate(-1, 'monthOffset')}
             aria-label={ariaLabels.prevButton}>
-            <i />
-          </button>
+            <i /><p>AAA</p>
+          </Button>
         ) : null}
         {showMonthAndYearPickers ? (
           <span className={styles.monthAndYearPickers}>
